@@ -27,11 +27,7 @@
                     <li><a href="#player">Player</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#contact">Contact</a></li>
-<<<<<<< HEAD
                     <li><a href="php/check-login.php"><i class="logo__user fa-solid fa-user"></i></a></li>
-=======
-                    <li><a href="./check-login.php"><i class="logo__user fa-solid fa-user"></i></a></li>
->>>>>>> 4c4b82955909e36c7b92103d06deee56bd9c7507
                     <li><a href="giohang.html"><i class="logo__cart fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
                 <h3 class="cart__number">0</h3>
