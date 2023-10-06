@@ -17,7 +17,7 @@ ul, li {
 /* Header */
 .main__header {
     height: 70px;
-    background-color: #f00;
+    background-color: rgb(0, 200, 150);
     position: fixed;
     top: 0;
     left: 0;

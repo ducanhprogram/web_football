@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,21 @@
 <body>
    
     <div class="container d-flex justify-content-center align-items-center"
+=======
+<?php 
+   session_start();
+   if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>multi-user role-based-login-system</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+
+      <div class="container d-flex justify-content-center align-items-center"
+>>>>>>> 4c4b82955909e36c7b92103d06deee56bd9c7507
       style="min-height: 100vh">
       	<form class="border shadow p-3 rounded"
       	      action="php/check-login.php" 
@@ -47,6 +63,7 @@
 			  <option selected value="user">User</option>
 			  <option value="admin">Admin</option>
 		  </select>
+<<<<<<< HEAD
 
           <button type="submit" 
 		class="btn btn-primary">LOGIN</button>
@@ -55,3 +72,16 @@
    
 </body>
 </html>
+=======
+		 
+		  <button type="submit" 
+		          class="btn btn-primary">LOGIN</button>
+		</form>
+      </div>
+
+</body>
+</html>
+<?php }else{
+	header("Location: home.php");
+} ?>
+>>>>>>> 4c4b82955909e36c7b92103d06deee56bd9c7507
