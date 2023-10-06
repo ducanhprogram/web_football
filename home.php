@@ -1,3 +1,9 @@
+<?php 
+   session_start();
+   include "db_conn.php";
+   if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +27,7 @@
                     <li><a href="#player">Player</a></li>
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="./user.html"><i class="logo__user fa-solid fa-user"></i></a></li>
+                    <li><a href="./check-login.php"><i class="logo__user fa-solid fa-user"></i></a></li>
                     <li><a href="giohang.html"><i class="logo__cart fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
                 <h3 class="cart__number">0</h3>
@@ -415,3 +421,7 @@
     </div>
 </body>
 </html>
+
+<?php }else{
+	header("Location: index.php");
+} ?>
